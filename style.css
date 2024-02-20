@@ -3,13 +3,27 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
 label {
+  display: block;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -31,6 +45,9 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -42,17 +59,4 @@ button:hover {
   font-size: 18px;
   font-weight: bold;
   color: #333;
-}
-
-/* Estilos responsivos */
-@media only screen and (min-width: 600px) {
-  /* Ajuste de largura dos campos para telas maiores */
-  input {
-    width: 50%;
-  }
-
-  /* Ajuste de margens para espaçamento mais equilibrado */
-  label, input, button {
-    margin: 5px;
-  }
 }

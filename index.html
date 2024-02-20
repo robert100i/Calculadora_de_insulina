@@ -8,24 +8,28 @@
     <title>Calculadora de Insulina</title>
 </head>
 <body>
-    <label for="glicoseInput">Glicose Atual:</label>
-    <input type="number" id="glicoseInput" placeholder="Digite a glicose atual">
-  
-    <label for="glicoseMetaInput">Meta de Glicose:</label>
-    <input type="number" id="glicoseMetaInput" placeholder="Digite a meta de glicose desejada">
-  
-    <label for="glicosePorUnidadeInput">Glicose por Unidade de Insulina:</label>
-    <input type="number" id="glicosePorUnidadeInput" placeholder="Digite a glicose por unidade de insulina">
-  
-    <label for="carboidratosInput">Carboidratos Consumidos (opcional):</label>
-    <input type="number" id="carboidratosInput" placeholder="Digite a quantidade de carboidratos consumidos">
-  
-    <label for="carboidratosPorInsulinaInput">Carboidratos por Unidade de Insulina Adicional (opcional):</label>
-    <input type="number" id="carboidratosPorInsulinaInput" placeholder="Digite a quantidade de carboidratos por unidade de insulina adicional">
-  
-    <button onclick="calcularInsulina()">Calcular</button>
-  
-    <p id="resultado"></p>
+    <body>
+        <div class="container">
+          <h1>Calculadora de Insulina</h1>
+          <label for="glicoseInput">Glicose Atual:</label>
+          <input type="number" id="glicoseInput" placeholder="Digite a glicose atual">
+      
+          <label for="glicoseMetaInput">Meta de Glicose:</label>
+          <input type="number" id="glicoseMetaInput" placeholder="Digite a meta de glicose desejada">
+      
+          <label for="glicosePorUnidadeInput">Glicose por Unidade de Insulina:</label>
+          <input type="number" id="glicosePorUnidadeInput" placeholder="Digite a glicose por unidade de insulina">
+      
+          <label for="carboidratosInput">Carboidratos Consumidos (opcional):</label>
+          <input type="number" id="carboidratosInput" placeholder="Digite a quantidade de carboidratos consumidos">
+      
+          <label for="carboidratosPorInsulinaInput">Carboidratos por Unidade de Insulina (opcional):</label>
+          <input type="number" id="carboidratosPorInsulinaInput" placeholder="Digite a quantidade de carboidratos por unidade de insulina adicional">
+      
+          <button onclick="calcularInsulina()">Calcular</button>
+      
+          <p id="resultado"></p>
+        </div>
   
     <script src="script.js"></script>
 </body>
